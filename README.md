@@ -3,7 +3,7 @@ Web services are of two kinds: Simple Object Access Protocol (SOAP) and Represen
 SOAP defines a standard communication protocol (set of rules) specification for XML-based message exchange. 
 Its purpose is to induce extensibility, neutrality and independence. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.
 
-> In this guide you will learn about deploying a custom SOAP Web service in the back-end and consuming that service using Ballerina SOAP Connectors.
+> In this guide you will learn about deploying a custom SOAP Web service in the back-end and invoking that service using Ballerina SOAP Connectors.
 
 The following are the sections available in this guide.
 
@@ -123,9 +123,9 @@ function main(string... args) {
 
 ## Testing 
 
-### Consuming the SOAP service 
+### Invoking the SOAP service 
 
-You can run the SOAP service that you deployed and the Ballerina SOAP Client you have developed above, in your local environment. Open your terminal and navigate to `consuming-a-soap-service/guide`, and execute the following command.
+You can run the SOAP service that you deployed and the Ballerina SOAP Client you have developed above, in your local environment. Open your terminal and navigate to `invoking-soap-service/guide`, and execute the following command.
 ```
 $ ballerina run invoking_soap_service
 ```
@@ -156,12 +156,12 @@ Once you are done with the development, you can deploy the service locally as be
 
 ### Deploying locally
 
-- As the first step, you can build a Ballerina executable archive (.balx) of the client that you developed. Navigate to `consuming-a-soap-service/guide` and run the following command.
+- As the first step, you can build a Ballerina executable archive (.balx) of the client that you developed. Navigate to `invoking-soap-service/guide` and run the following command.
 ```bash
    $ ballerina build invoking_soap_service
 ```
 
-- Once the consuming_a_soap_service.balx is created inside the target folder, you can run that with the following command. 
+- Once the invoking_soap_service.balx is created inside the target folder, you can run that with the following command. 
 ```bash
    $ ballerina run target/invoking_soap_service.balx
 ```
