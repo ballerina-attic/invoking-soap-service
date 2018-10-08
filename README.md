@@ -148,7 +148,7 @@ To run the unit tests, open your terminal and navigate to `invoking-soap-service
    $ ballerina test
 ```
 
-> The source code for the tests can be found at [invoking_soap_service_test.bal](https://github.com/Seralahthan/ballerina-by-guide/blob/master/consuming-a-soap-service/guide/consuming_a_soap_service/tests/consuming_a_soap_service_test.bal).
+> The source code for the tests can be found at [invoking_soap_service_test.bal](https://github.com/Seralahthan/invoking-soap-service/blob/master/guide/invoking_soap_service/tests/invoking_soap_service_test.bal).
 
 ## Deployment
 
